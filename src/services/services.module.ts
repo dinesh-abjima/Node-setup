@@ -8,6 +8,9 @@ import { DatabaseModule } from 'src/database/database.module';
     ],
     imports : [
         DatabaseModule
+    ],
+    exports:[
+        CatService
     ]
 })
 export class ServicesModule {}

@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { CatsService } from 'src/database/services/cat.service';
+import { CatsRepository } from 'src/database/repositories/cat-reposorty';
 
 @Injectable()
 export class CatService {
-    constructor(private catService : CatsService){
+    constructor(private catService : CatsRepository){
 
     }
 

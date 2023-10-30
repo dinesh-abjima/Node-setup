@@ -2,7 +2,7 @@ import { Injectable, Inject } from '@nestjs/common';
 import { CatDto } from '../domains/cat.entity';
 
 @Injectable()
-export class CatsService {
+export class CatsRepository {
   constructor(
     @Inject('CATS_REPOSITORY')
     private catsRepository: typeof CatDto

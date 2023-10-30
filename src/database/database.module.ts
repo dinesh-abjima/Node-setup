@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { DatabaseService } from './database.service';
-import { CatsService } from './services/cat.service';
+import { CatsRepository } from './repositories/cat-reposorty';
 import { databaseProviders } from './database.provider';
 import { catsProviders } from './providers/cat-provider';
 
@@ -10,13 +10,13 @@ import { catsProviders } from './providers/cat-provider';
     ...databaseProviders,
     ...catsProviders,
     DatabaseService,
-    CatsService
+    CatsRepository
   ],
   exports:[
     ...databaseProviders,
     ...catsProviders,
     DatabaseService,
-    CatsService
+    CatsRepository
   ]
 })
 export class DatabaseModule {}
