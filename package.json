@@ -26,11 +26,12 @@
     "aws-sdk": "^2.1483.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
-    "mssql": "^10.0.1",
+    "mssql": "^9.3.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
     "sequelize": "^6.33.0",
-    "sequelize-typescript": "^2.1.5"
+    "sequelize-typescript": "^2.1.5",
+    "typeorm": "^0.3.17"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
